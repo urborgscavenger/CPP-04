@@ -1,0 +1,20 @@
+#ifndef WRONGANIMAL_HPP
+#define WRONGANIMAL_HPP
+
+#include "CSharpStyle.hpp"
+
+class WrongAnimal {
+protected:
+    string type;
+
+public:
+    WrongAnimal();
+    WrongAnimal(const WrongAnimal& other);
+    WrongAnimal& operator=(const WrongAnimal& other);
+    ~WrongAnimal();
+
+    void makeSound() const;
+    string getType() const;
+};
+
+#endif
